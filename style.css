@@ -1,0 +1,94 @@
+/*################################ Custom Fonts ###############################*/
+
+@font-face {
+  font-family: windsor;
+  src: url('fonts/Windsor.ttf');
+}
+
+@font-face {
+  font-family: poppins;
+  src: url('fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: poppinsBold;
+  src: url('fonts/Poppins-Black.ttf');
+}
+
+@font-face {
+  font-family: poppinsBlack;
+  src: url('fonts/Poppins-Black.ttf');
+}
+
+/*################################ Base Styles ################################*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'poppins', sans-serif;
+  background-color: #131516;
+  color: #fffde4;
+}
+
+nav {
+  display: flex;
+  margin-bottom: 10vh;
+}
+
+article {
+  background: #005aa7;
+  background: -webkit-linear-gradient(to right, #fffde4, #005aa7);
+  background: linear-gradient(to right, #fffde4, #005aa7);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-left: 2vw;
+  margin-top: 2vw;
+}
+
+/*############################## Utility Classes ##############################*/
+
+.poppins-bold {
+  font-family: 'poppinsBold', sans-serif;
+}
+
+.poppins-black {
+  font-family: 'poppinsBlack', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-centre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*################################## Content ##################################*/
+
+.heading {
+  font-size: 3rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.content-item {
+  background-color: red;
+  border-radius: 7px;
+  display: flex;
+}
